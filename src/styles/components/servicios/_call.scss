@@ -1,0 +1,149 @@
+.call__action{
+        
+    z-index: -1;
+    height: 616px;
+    background-color: $secundario;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+
+    @include telefonoGrande{
+        height: 650px;
+    }
+    
+    @include tablet{
+        height: 400px;
+    }
+
+    @include desktop{
+        
+        height: 768px;
+        background-image: url(../images/servicios/back.footer-04.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -273px;
+        background-position-y: -35px;
+        margin-bottom: -11rem;
+    }
+
+    @include desktopGrande{
+        background-position-x: inherit;
+        background-position-y: inherit;
+    }
+
+    .img{
+        flex: 10%;
+        text-align: start;
+        margin-top: -3rem;
+
+        @include tablet{
+            flex: 40%;
+        }
+
+        @include desktop{
+            margin-top: 0;
+            flex: 10%;
+        }
+
+        img{
+            
+            width: 80%;
+
+            @include desktop{
+                width: 90%;
+            }
+            @include desktopGrande{
+                width: 80%;
+            }
+        }
+    }
+    
+    .info{
+        flex: 100%;
+
+        @include tablet{
+            flex: 60%;
+        }
+        @include desktop{
+            flex: 50%;
+        }
+
+        h2{
+            font-family: $Bellerose;
+            font-size: 32px;
+            line-height: 2.5rem;
+            color: white;
+            font-weight: lighter;
+            padding: 0 2rem;
+            margin-top: -7rem;
+            
+
+            @include tablet{
+                font-size: 42px;
+                margin-left: -7rem;
+                margin-top: -5rem;
+            }
+
+
+            @include desktop{
+                font-size: 49px;
+                line-height: 3rem;
+                padding-right: 23rem;
+                margin-left: -2rem;
+                margin-top: -3rem;
+            }
+
+            @include desktopGrande{
+                font-size: 70px;
+                line-height: 4.5rem;
+                padding-right: 23rem;
+                margin-left: -10rem;
+                margin-top: -8rem;
+            }
+        }
+    }
+
+    .izquierda{
+        
+
+        @include desktop{
+            margin-top: -8rem;
+            margin-left: -3rem;
+        }
+    }
+
+    .btn{
+        flex: 100%;
+        margin-top: -10rem;
+        margin-bottom: 0rem;
+
+        @include tablet{
+            margin-top: -18rem;
+            margin-left: 12rem;
+        }
+
+        @include desktop{
+            margin-top: -38rem;
+            margin-left: 0rem;
+            
+        }
+
+        @include desktopGrande{
+            margin-top: -37rem;
+            margin-left: 0rem;
+        }
+        
+
+        a{
+            @include boton;
+            background-color: $primario;
+            color: white;
+            padding: .7rem 3rem;
+            border-radius: 2rem
+        }
+    }
+
+    
+}

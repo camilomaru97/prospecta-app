@@ -1,0 +1,162 @@
+.desarrollo__container-2{
+    width: 80%;
+    margin: 0 auto;
+    height: 1365px;
+
+    @include tablet{
+        height: 780px;
+    }
+    @include desktop{
+        height: 630px;
+        width: 100%;
+    }
+
+    @include desktopGrande{
+        height: 680px;
+    }
+    
+    h1{
+        flex: 100%;
+        font-size: 38px;
+        font-family: $Bellerose;
+        font-weight: lighter;
+        color: $secundario;
+        height: 90px;
+        text-align: center;
+        margin-top: 2rem;
+
+        @include tablet{
+            font-size: 58px;
+            margin-bottom: 3rem;
+            margin-top: .3rem;
+        }
+
+        @include desktop{
+            font-size: 65px;
+            height: 90px;
+            margin-bottom: 2rem;
+        }
+
+        @include desktopGrande{
+            font-size: 74px;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .desarrollo__boxes{
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -3rem;
+
+        .box{
+
+            flex: 0 0 235px;
+            height: 290px;
+            margin: .6rem 2rem;
+            border-radius: 0rem 0rem 2rem 2rem;
+
+            @include tablet{
+                flex: 1 0 200px;
+            }
+
+            @include desktop{
+                margin: 0 2rem;
+                flex: 0 0 255px;
+                height: 355px;
+                margin: .6rem 1rem;
+            }
+
+            @include desktopGrande{
+                flex: 0 0 275px;
+            }
+
+            &:hover {
+                transition: .5s ease-in-out;
+                box-shadow: 12px 9px 37px 3px rgba(0,0,0,0.39);
+                transform: translate(0rem, -1rem);
+            }
+
+            &:hover .emoji img{
+                width: 45%;
+                transition: .5s ease-in-out;
+            }
+            
+            .emoji{
+                height: 58.6%;
+                width: 100%;
+                background-color: #E6E6E6;
+                padding-top: 2rem;
+
+                @include tablet{
+                    padding-top: 3rem;
+                }
+            }
+            .info{
+                height: 41.4%;
+                background-color: $primario;
+                border-radius: 0rem 0rem 2rem 2rem;
+                padding-top: 1.8rem; 
+
+                @include tablet{
+                    padding-top: 1.8rem; 
+                }
+
+                @include desktop{
+                    padding-top: 2.6rem; 
+                }
+
+                p{
+                    color: white;
+                    font-size: 16px;
+                    font-family: $robotoCondensed;
+
+                    @include tablet{
+                        font-size: 18px;
+                    }
+
+                    @include desktop{
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .dos{
+                padding-top: 2rem !important; 
+                background-color: $secundario !important;
+                @include tablet{
+                    padding-top: 1.6rem !important;  
+                }
+                @include desktop{
+                    padding-top: 2.6rem !important; 
+                }
+            }
+            .tres{
+                padding-top: 1.2rem !important;
+                
+                @include tablet{
+                    padding-top: 1rem !important;
+                }
+
+                @include desktop{
+                    padding-top: 1.8rem !important;
+                }
+            }
+
+            .cuatro{
+                padding-top: 2.4rem !important;
+                @include tablet{
+                    padding-top: 2.3rem !important;
+                }
+
+                @include desktop{
+                    padding-top: 3rem !important;
+                }
+                
+            }
+        }
+    }
+}

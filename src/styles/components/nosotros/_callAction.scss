@@ -1,0 +1,90 @@
+.call-action{
+        
+    background-image: url(../images/nosotros/call-action-banner-04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding: 0rem 2rem;
+
+    @include desktop{
+        padding: 4rem 4rem;
+        height: 538px;
+    }
+
+    .img{
+        flex: 20%;
+
+        img{
+            
+            display: none;
+
+            @include desktop{
+                width: 23%;
+            }
+        }
+    }
+    
+    .info{
+        flex: 100%;
+
+        @include desktop{
+            flex: 50%;
+        }
+
+        h2{
+            font-family: $Bellerose;
+            font-size: 35px;
+            line-height: 2rem;
+            color: white;
+            font-weight: lighter;
+            margin-top: 4rem;
+
+            @include tablet{
+                font-size: 50px;
+                line-height: 2.9rem;
+            }
+
+            @include desktop{
+                font-size: 60px;
+                line-height: 3.5rem;
+            }
+        }
+    }
+
+    .izquierda{
+        margin-left: 18rem;
+        margin-top: 5rem;
+    }
+
+    .derecha{
+        margin-right: 20rem;
+        margin-top: 5rem;
+    }
+}
+
+
+.btn__call{
+flex: 100%;
+margin-bottom: 10rem;
+
+@include tablet{
+    margin-bottom: 8rem;
+}
+
+
+a{
+    @include boton;
+    background-color: white;
+    font-size: 1rem;
+    color: $primario;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+}
+}
+
+

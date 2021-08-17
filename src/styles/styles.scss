@@ -1,0 +1,112 @@
+@import './base/base';
+@import './base/settings';
+
+//Corrector padding
+html{
+    @include box-sizing(border-box);
+}
+*,
+*:after,
+*:before{
+    @include box-sizing(inherit);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+//***********************************
+//**********Componentes**************
+//***********************************
+
+// UI
+@import './components/navbar';
+@import './components/header';
+@import './components/footer';
+@import './components/btn-wsp';
+
+
+// INICIO
+@import './components/inicio/infoHeaderInicio';
+@import './components/inicio/hacemos';
+@import './components/inicio/servicios';
+@import './components/inicio/sliderWrap';
+@import './components/inicio/carousel';
+@import './components/inicio/asesoriaPersonalizada';
+
+
+//NOSOTROS
+@import './components/nosotros/infoHeader';
+@import './components/nosotros/infoNosotros';
+@import './components/nosotros/callAction';
+
+
+//SERVICIOS
+@import './components/servicios/infoHeader';
+@import './components/servicios/servicios';
+@import './components/servicios/call';
+
+
+//PORTAFOLIO
+@import './components/portafolio/banner';
+
+
+//BRANDING
+@import './components/branding/infoHeader.scss';
+@import './components/branding/paintPoints';
+@import './components/branding/howTo';
+@import './components/branding/sliderWrapBranding';
+@import './components/branding/carouselBranding';
+@import './components/branding/planes';
+
+
+//DESARROLLO
+@import './components/desarrollo/infoHeader';
+@import './components/desarrollo/painPoints';
+@import './components/desarrollo/howTo';
+@import './components/desarrollo/sliderWrapDev';
+@import './components/desarrollo/carouselDev';
+@import './components/desarrollo/planes';
+
+
+//REDES SOCIALES
+@import './components/redes/infoHeader';
+@import './components/redes/painPoints';
+@import './components/redes/howTo';
+@import './components/redes/sliderWrapRedes';
+@import './components/redes/carouselRedes';
+@import './components/redes/planes';
+
+
+//DISEÑO
+@import './components/diseño/infoHeader';
+@import './components/diseño/painPoints';
+@import './components/diseño/howTo';
+@import './components/diseño/sliderWrapDiseno';
+@import './components/diseño/carouselDiseno';
+@import './components/diseño/planes';
+
+
+//PAUTA
+@import './components/pauta/infoHeader';
+@import './components/pauta/painPoints';
+@import './components/pauta/howTo';
+@import './components/pauta/sliderWrapPauta';
+@import './components/pauta/carouselPauta';
+@import './components/pauta/planes';
+
+
+
+//CONTACTO
+@import './components/contacto/infoHeader';
+@import './components/contacto/form';
+
+
+

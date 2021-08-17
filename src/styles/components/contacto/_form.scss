@@ -1,0 +1,215 @@
+//Formulario
+
+.error{
+    margin: 0 auto;
+    width: 85%;
+    height: 2rem;
+    text-align: center;
+    color: white;
+    
+    background-color: #3f4764a5;
+    border-radius: .5rem;
+
+    h4{
+        padding-top: .4rem;
+        font-family: $robotoCondensed;
+        font-weight: lighter;
+    }
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: $primario !important;
+}
+    
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 796px;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../images/contacto/background-form-04.png);
+    background-repeat: no-repeat;
+    background-position-y: -32rem;
+    background-size: cover ;
+
+    @include tablet{
+        background-position-y: -53rem;
+    }
+
+    @include desktop{
+        background-position-y: inherit;
+        background-position-x: -58rem;
+        height: 100vh;
+    }
+
+    @include desktopGrande{
+
+        background-size: cover ;
+        background-position-x: -71rem;
+
+    }
+
+
+    .img{
+        margin-top: 2rem;
+        height: 380px;
+        text-align: center;
+        flex: 100%;
+        
+
+        @include desktop{
+            flex: inherit;
+            text-align: inherit;
+            
+        }
+
+        .desktop{
+
+            display: none;
+            width: 100%;
+
+            @include desktop{
+                display: block;
+                width: 79%;
+                
+            }
+        }
+
+        .responsive{
+            
+            width: 85%;
+
+            @include tablet{
+                width: 58%;
+            }
+
+            @include desktop{
+                display: none;
+            }
+            
+        }
+    }
+
+
+    form{
+        
+        flex: 100%;
+        margin-top: -5rem;
+
+        @include desktop{
+            width: 350px;
+            flex: inherit;
+        }
+    }
+
+    .grupo{
+        position: relative;
+        margin: 2rem;
+    }
+
+    input, option{
+        background-color: none;
+        font-family: $robotoCondensed;
+        font-weight: lighter;
+        color: gray;
+        font-size: .9rem;
+        padding: .6rem .6rem .2rem 0rem;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $primario;
+        
+        &:focus{
+            outline: none;            
+        }
+
+
+    }
+
+}
+
+input:focus~label,
+input:valid~label
+{
+    position: absolute;
+    font-size: 1rem;
+    top: -14px;
+    color:$primario;
+}
+
+label{
+    position: absolute;
+    color: gray;
+    left: 0px;
+    top: 10px;
+    transition: 0.3s ease all;
+    pointer-events: none;
+    font-family: $robotoCondensed;
+}
+
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+input:focus~::before{
+    width: 100%;
+
+}
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: $primario;
+    transition: 0.5s ease all;
+}
+
+select{
+    border: none;
+    font-family: $robotoCondensed;
+    font-size: 1rem;
+    color: $primario;
+    margin-bottom: 1.5rem;
+    margin-left: 1.7rem;
+    width: 83%;
+}
+
+button{
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: white;
+    background: $primario;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    margin: auto;
+    cursor: pointer;
+}
+
+.wrap{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.3rem;
+    margin-bottom: 2rem;
+
+    input{
+        flex: 5%;
+        
+    }
+    p{
+        flex: 80%;
+
+        a{
+            color: $secundario
+        }
+    }
+    
+}

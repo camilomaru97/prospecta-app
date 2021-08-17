@@ -1,0 +1,160 @@
+.branding__carousel-container{
+    height: 310px;
+
+    @include telefonoGrande{
+        height: 320px;
+    }
+
+    @include tablet{
+        height: 435px;
+    }
+
+    @include desktop{
+        height: 575px;
+    }
+    @include desktopGrande{
+        height: 560px;
+    }
+}
+.branding__container-carousel{
+    width: 75%;
+    height: 435px;
+    margin-top: 3rem;
+    margin: 0 auto;
+
+    @include desktopGrande{
+        width: 65%;
+    }
+    
+
+    .slick-prev, .slick-next{
+        width: 50px;
+        height: 50px;
+        top: 42% !important;
+    }
+    
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{
+        color:  black;
+        outline: none;
+        background-color: #fff;
+    }
+    
+    .slick-next:before{
+        color: black;
+        content: url(../images/inicio/slider-button-der.png);
+    }
+    
+    .slick-prev:before{
+        content: url(../images/inicio/slider-button-izq.png);
+    }
+    
+    .slick-next{
+        right: 145px;
+    }
+    
+    .slick-prev{
+        left: 120px;
+    }
+    
+    .slick-dots{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem 0;
+            list-style: none;
+            bottom: 16rem;
+            margin-right: 1.5rem;
+    
+            @include desktop{
+                bottom: 50px;
+            }
+    
+            @include desktopGrande{
+                bottom: 80px;
+            }
+        
+            li{
+                margin: 0 0.25rem;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+        
+            button{
+                display: block;
+                width: 1rem;
+                padding: 0;
+                height: 16px;
+                border-radius: 1px solid $primario;
+                border-radius: 50%;
+    
+                &:before{
+                    opacity: .5;
+                    background-color: $primario;
+                    width: 1rem;
+                    padding: 0;
+                    height: 16px;
+                    border-radius: 1px solid $primario;
+                    border-radius: 50%;
+                }
+            }
+        
+            li.slick-active button{
+                background-color: $primario;
+                
+            }
+        
+            li button {
+                text-indent: -9999px;
+             }
+        }
+
+    
+}
+
+.branding__slider-title{
+    text-align: center;
+    margin: 2rem 0rem 2rem 0;
+    
+
+    @include tablet{
+        margin: 1rem 0rem 4rem 0;
+        padding: 1rem 0;
+    }
+
+    @include desktop{
+        margin: 0rem 0rem 2rem 0;
+    }
+
+    h2{
+        font-family: $Bellerose;
+        font-weight: 500;
+        font-size: 2rem;
+        color:$secundario;
+        line-height: 2rem;
+        margin: 1.2rem 0 -1rem 0;
+
+        @include telefonoGrande{
+            font-size: 35px;
+        }
+
+        @include tablet{
+            font-size: 40px;
+            line-height: 2.5rem;
+        }
+
+        @include tablet{
+            font-size: 50px;
+            line-height: 2.8rem;
+        }
+        @include desktop{
+            font-size: 65px;
+            line-height: 2.8rem;
+        }
+
+        @include desktopGrande{
+            font-size: 65px;
+            line-height: 3.7rem;
+        }
+
+    }
+}

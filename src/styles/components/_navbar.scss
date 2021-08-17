@@ -1,0 +1,303 @@
+//Menu
+
+
+
+.nav__navbar-menu-items{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 9rem;
+
+
+    @include desktop{
+        margin-top: 3rem;
+        display: flex;
+        padding: 0 5rem 0 5rem;
+        margin-right: 3rem;
+        margin-top: -1rem;
+        flex: 50% 1;
+    }
+
+    @include desktopGrande{
+        margin-right: 5rem;
+    }    
+}
+
+.a{
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    margin: 1.1rem 0 1.1rem 0;
+
+    @include telefonoGrande{
+        margin: 1.2rem 0 1.2rem 0;
+    }
+
+    .fa-home,
+    .fa-check-circle,
+    .fa-briefcase,
+    .fa-mobile-alt,
+    .fa-address-book
+    {
+        flex: 30%;
+    }
+    .fa-chevron-right{
+        flex: 30%;
+    }
+
+    @include desktop{
+        flex: none;
+        margin: inherit;
+    }
+}
+
+.nav__menu{
+
+    // .porta{
+    //     padding-left: 2rem !important;
+    // }
+
+    // .contact{
+    //     padding-left: 1.5rem !important;
+    // }
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    @include desktop{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    
+    img{
+        width: 60%;
+        position: relative;
+        z-index: 10;
+
+        @include tablet{
+            width: 55%;
+        }
+        
+        @include desktop{
+            width: 85%;
+        }
+
+        @include desktopGrande{
+            flex: 10% 1;
+            width: 100%;
+        }
+    }
+
+    .nav__navbar-brand{  
+        text-align: start !important;
+    }
+
+    .nav__menu-items{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -105vh;
+        height: 100vh;
+        background-color: white;
+        width: 100%;
+        // padding-top: 9rem;
+        transition: all .5s;
+        text-align: center;
+
+
+        @include telefonoGrande{
+            top: -105vh;
+        }
+
+        @include tablet{
+            padding-top: 8rem;
+        }
+
+        @include desktop{
+            flex: 50%;
+            height: 215px;
+            position: inherit;
+            flex-direction: row;
+            align-items: center;
+            background-color: inherit;
+            padding-top: inherit;
+            z-index: 1;
+            // padding-left: 4.5rem;
+
+        }
+
+        @include desktopGrande{
+            flex: 50%;
+            height: 225px;
+            margin-left: 10rem;
+            margin-top: .5rem;
+            
+            
+        }
+
+        li{
+            padding: 1rem 4.5rem;
+            display: flex;
+
+            @include tablet{
+                padding: 1rem 12rem;
+            }
+
+            @include desktop{
+                padding: 0;
+                padding-top: 1.5rem;
+            }
+        }
+
+        .img-footer{
+            text-align: center;
+            @include desktop{
+                display: none;
+            }
+
+            img{
+                width: 45%;
+                margin-top: 0rem;
+                margin-bottom: 1.5rem;
+
+                @include telefonoGrande{
+                    width: 30%;
+                }
+
+                @include tablet{
+                    width: 35%;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            h2{
+                font-family: $robotoCondensed;
+                font-size: 17px;
+                color: $secundario;
+                @include desktop{
+                    display: none;
+                }
+            }
+            h3{
+                font-family: $robotoCondensed;
+                font-size: 18px;
+                color: $primario;
+                @include desktop{
+                    display: none;
+                }
+            }
+        }
+
+        .i{
+            font-size: 1.8rem;
+            color: $secundario; 
+
+            @include desktop{
+                display: none;
+            }
+        }
+
+        a{
+            color: $primario;
+            font-size: 1.2rem;
+            font-family: $robotoCondensed;
+            
+
+            @include desktop{
+                font-family: $robotoCondensed;
+                font-size: 1.3rem;
+                color: white;
+
+                &:hover{
+                    color: $secundario;
+                }
+            }
+        }
+
+        .footer-menu{
+
+            z-index: 100;
+            position: absolute;
+            width: 100%;
+            height: 90px;
+            top: 89%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            justify-content: center;
+            background-color:$secundario;
+            padding: 2rem 8rem 0 8rem;
+
+            @include tablet{
+                height: 92px;
+                top: 91%;
+                padding: 1.8rem 19rem 0 19rem;
+            }
+
+            a{
+                margin: 0 .5rem;
+            }
+            
+        
+            @include desktop{
+                display: none;
+            }
+            
+            .i{
+                flex: 25%;
+                text-align: center;
+                font-size: 2rem;
+                color: white;
+
+                @include tablet{
+                    font-size: 2.5rem;
+                }
+        
+            }
+            
+        }
+
+    }
+
+    ul.show{
+        top: 0;
+        color: $primario;
+    }
+}
+
+
+.btn-menu{
+        
+    display: block;
+    color: $secundario;
+    font-size: 1.7rem;
+    z-index: 1;
+    position: absolute;
+    top: 35px;
+    left: 290px;
+    cursor: pointer;
+
+    @include telefonoGrande{    
+        left: 330px;
+    }
+
+    @include tablet{
+        font-size: 2.5rem;
+        top: 75px;
+        left: 610px;
+    }
+
+    @include desktop{
+        font-size: 1.5rem;
+        padding: 0 3rem 3rem 0 ;
+        display: none;
+    }
+
+}

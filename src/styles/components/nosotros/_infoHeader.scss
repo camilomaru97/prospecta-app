@@ -1,0 +1,129 @@
+.info-banner{
+    display: flex;
+    height: 200px;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding-top: 13.5rem;
+
+    @include telefonoGrande{
+        padding-top: 10.5rem;
+    }
+
+    @include tablet{
+        padding-top: 14rem;
+    }
+
+    @include desktop{
+        padding-right: 2rem;
+        padding-top: 1rem;
+    }
+    @include desktopGrande{
+        padding-top: 1rem;
+    }
+
+
+    h1{
+        flex: 100%;
+        font-family: Bellerose;
+        height: 65px;
+        font-weight: lighter;
+        font-size: 29px;
+        color: white;
+        line-height: 3.5rem;
+        
+
+        
+
+        @include tablet{
+            margin-top: inherit;
+            font-size: 39px;
+            
+            
+            
+        }
+
+        @include desktop{
+            height: 0px;
+            font-size: 50px;
+            margin-bottom: -2rem;
+        }
+
+        @include desktopGrande{
+            
+        }
+    }
+   
+    p{
+        flex: 100%;
+        font-family: $Bellerose;
+        font-size: 64px;
+        color: white;
+        line-height: 1.8rem;
+        margin-bottom: 3.5rem;
+        letter-spacing: .7rem;
+        margin-top: -1.2rem;
+        margin-left: .5rem;
+
+        
+
+        @include tablet{
+            
+            font-size: 100px;
+            margin-bottom: 5rem;
+            padding: 0 1rem;
+        }
+
+        @include desktop{
+            font-size: 129px;
+            width: 80%;
+            margin: auto;
+            margin-bottom: -2.5rem;
+        }
+        @include desktopGrande{
+            
+        }
+    }
+
+    .img-logo{
+        
+
+        @include desktop{
+            flex: 30%;
+            margin-top: inherit;
+        }
+
+        img{
+            display: none;
+
+            @include tablet{
+                width: 48%;
+            }
+
+            @include desktop{
+                width: 80%;
+            }
+
+            @include desktopGrande{
+                width: 65%;
+            }
+        }
+        
+    }
+
+    .btn{
+
+        width: 100%;
+
+        @include desktop{
+            margin-bottom: -11rem;
+        }
+        a{
+            @include boton;
+
+            @include desktop{
+                padding: .5rem 1rem;
+            }
+        }
+    }
+}

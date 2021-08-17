@@ -1,0 +1,339 @@
+.dev__container-5{
+    
+    width: 80%;
+    margin: 0 auto;
+    height: 1490px;
+
+    @include tablet{
+        width: 100%;
+        height: 790px;
+    }
+
+    @include desktop{
+        height: 895px;
+        width: 85%;
+    }
+    @include desktopGrande{
+        height: 955px;
+    }
+
+h2{
+    font-family: $Bellerose;
+    font-weight: 500;
+    font-size: 35px;
+    color:$secundario;
+    line-height: 2.2rem;
+    margin: 1.2 0 -1rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    
+
+    @include tablet{
+        font-size: 55px;
+        line-height: 2.5rem;
+        margin-bottom: inherit;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+
+    @include desktop{
+        font-size: 65px;
+        margin-bottom: 5rem !important;
+    }
+    @include desktopGrande{
+        font-size: 75px;
+        margin-bottom: 5rem;
+        margin-top: 4rem;
+    }
+
+}
+
+.dev__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+
+    @include desktopGrande{
+        margin-left: 4rem;
+    }
+
+    .box-all-service{
+        
+        display: flex;
+        flex-wrap: wrap;
+        height: 576px;
+        flex: 0 0 340px;
+        margin: 1rem 2rem;
+        border-radius: 2rem 2rem 2rem 2rem;
+
+        @include tablet{
+            flex: 0 0 320px;
+            margin: 1rem 1rem;
+        }
+
+        @include desktop{
+            height: 625px;
+            flex: 0 0 400px;
+            margin: 0 2rem;
+            border-radius: 2rem 0 0 2rem;
+
+            &:hover {
+                transition: .5s ease-in-out;
+                box-shadow: 12px 12px 17px 1px rgba(0,0,0,0.31);
+                transform: translate(0rem, -1rem);
+            }
+        }
+        @include desktopGrande{
+            height: 680px;
+            flex: 0 0 440px;
+            
+        }
+        
+        .plan{
+            flex: 100%;
+            height: 20%;
+            border-radius: 2rem 2rem 0 0;
+            background-color: $secundario;
+
+            @include desktop{
+                border-radius: 2rem 0 0 0;
+            }
+
+            h3{
+                font-family: $Bellerose;
+                font-weight: lighter;
+                font-size: 40px;
+                color: white;
+                
+                line-height: 2.2rem;
+                text-align: center;
+
+                
+
+                @include desktop{
+                    line-height: 3rem;
+                    font-size: 51px;
+                    margin-top: -0.5rem;            
+                }
+            }
+        }
+
+
+        .info{
+            flex: 80%;
+            height: 80%;
+            background-color: #F2F2F2;
+            text-align: center;
+            border-radius: 0 0 2rem 2rem;
+
+            @include desktop{
+                border-radius: 0 0 0 2rem;
+            }
+
+            img{
+                margin: 1.5rem 0 1.5rem 0;
+
+                @include desktop{
+                    margin: 1rem 0 .5rem 0;
+                }
+            }
+
+            li{
+                width: 80%;
+                list-style-position: inside;
+                font-family: $robotoCondensed;
+                font-weight: lighter;
+                font-size: 15.8px;
+                color: $primario;
+                margin: .2rem 0rem .2rem 2.5rem;
+                text-align: justify;
+
+                @include tablet{
+                    font-size: 15.4px;
+                }
+
+                @include desktop{
+                    font-size: 19px;
+                    margin: .3rem 0rem .3rem 3rem;
+                }
+                @include desktopGrande{
+                    font-size: 21px;
+                    margin: .3rem 0rem .3rem 3rem;
+                }
+                
+            }
+
+            .bold{
+                list-style: none;
+                font-weight: bolder;
+                color: $secundario;
+                text-align: center;
+                margin-top: 1.5rem;
+                
+            }
+        }
+    
+    }
+
+    .boxes-service-cost{
+        flex: 0 0 340px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include desktop{
+            flex: 0 0 559px;
+        }
+
+        @include desktopGrande{
+            flex: 0 0 640px;
+        }
+
+        .plan{
+            display: flex;
+            height: 150px;
+            flex-wrap: wrap;
+            border-radius: 0 3rem 3rem 0;
+            margin: .9rem 0;
+
+            @include tablet{
+                height: 120px;
+            }
+
+            @include desktop{
+                height: 135px;
+                &:hover {
+                    transition: .5s ease-in-out;
+                    box-shadow: 12px 12px 17px 1px rgba(0,0,0,0.31);
+                    transform: translate(1rem, -.3rem);
+                }
+            }
+
+            @include desktopGrande{
+                height: 149px;
+            }
+
+            
+
+            .info-plan{
+                flex: 0 0 100%;
+                height: 70%;
+                background-color: #F2F2F2;
+                border-radius: 2rem 2rem 0 0;
+                padding-top: .8rem;
+
+                @include tablet{
+                    padding-top: .3rem;
+                }
+
+                @include desktop{
+                    padding-top: .2rem;
+                    border-radius: 0 3rem 0 0;
+                }
+
+                @include desktopGrande{
+                    padding-top: .5rem;
+                }
+
+                h3{
+                    text-align: center;
+                    color: $primario;
+                    font-family: $robotoCondensed;
+                    font-size: 22px;
+
+                    @include tablet{
+                        font-size: 18px;
+                    }
+
+                    @include desktop{
+                        font-size: 24px;
+                    }
+                    @include desktopGrande{
+                        font-size: 24px;
+                    }
+                }
+
+                p{
+                    text-align: center;
+                    font-family: $robotoCondensed;
+                    font-weight: lighter;
+                    color: $primario;
+                    font-size: 16px;
+
+                    @include desktop{
+                        font-size: 19px;
+                    }
+                    @include desktopGrande{
+                        font-size: 21px;
+                    }
+                }
+
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    
+                    a{
+                        z-index: 1;
+                        @include boton;
+                        margin-top: .5rem;
+                        padding: .2rem 2rem;
+                        border-radius: 4rem;
+
+                        @include desktop{
+                            margin-top: .5rem;
+                            padding: .2rem 4rem;
+                        }
+                        @include desktopGrande{
+                            margin-top: .3rem;
+                        }
+                
+                        
+                    }
+                }
+            }
+            .color{
+                background-color: $secundario !important;
+            }
+            .precio-plan{
+                flex: 0 0 100%;
+                height: 30%;
+                background-color: $primario;
+                border-radius: 0 0 2rem 2rem;
+
+                @include desktop{
+                    border-radius: 0 0 3rem 0;
+                }
+
+                p{
+                    text-align: center;
+                    font-family: $Bellerose;
+                    font-size: 32px;
+                    color: white;
+                    margin-top: -1.8rem;
+
+                    @include tablet{
+                        font-size: 30px;
+                    }
+
+
+                    @include desktop{
+                        font-size: 38px;
+                        margin-top: -2.5rem;
+                    }
+                    @include desktopGrande{
+                        font-size: 38px;
+                        margin-top: -2.3rem
+                    }
+                    
+                }
+            }
+        }
+    
+
+    }
+}
+
+}    
+

@@ -1,0 +1,255 @@
+.diseno__container-5{
+
+    height: 965px;
+
+    @include tablet{
+        height: 600px;
+    }
+    
+    @include desktop{
+        width: 90%;
+        height: 550px;
+        margin: 0 auto;
+    }
+    @include desktopGrande{
+        width: 100%;
+        height: 650px;
+    }
+    h2{
+        font-family: $Bellerose;
+        font-weight: 500;
+        font-size: 36px;
+        color:$secundario;
+        line-height: 2.2rem;
+        margin: 1.2 0 -1rem 0;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @include tablet{
+            font-size: 40px;
+            line-height: 2.5rem;
+            margin-bottom: inherit;
+        }
+
+        @include tablet{
+            font-size: 55px;
+            line-height: 2.8rem;
+        }
+        @include desktop{
+            font-size: 65px;
+        }
+        @include desktopGrande{
+            font-size: 75px;
+        }
+
+    }
+
+    .boxes{
+        display: none;
+        @include desktop{
+            display: flex;
+            height: 450px;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            @include desktopGrande{
+                height: 550px;
+            }
+
+            .box{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                background-color: $primario;
+                height: 300px;
+                margin: 0 1rem;
+                flex: 0 0 520px;
+
+                @include desktopGrande{
+                    flex: 0 0 670px;
+                    height: 390px;
+                }
+                
+                .img{
+                    flex: 100%;
+                    img{
+                        width: 20%;
+                        margin-top: 2.5rem;
+                        margin-bottom: .5rem;
+
+                        @include desktopGrande{
+                            margin-top: 4rem;
+                        }
+                    }
+    
+                    .secundario{
+                        width: 30% !important;
+                        margin-top: 1rem !important; 
+                        margin-bottom: 1rem !important;
+                        
+                        @include desktopGrande{
+                            margin-top: 2rem !important; 
+                            margin-bottom: 1rem !important;
+                        }
+                    }
+                }
+
+                .info{
+                    flex: 100%;
+                    padding-left: 5rem;
+
+                    @include desktopGrande{
+                        padding-left: 8rem;
+                    }
+                    p{
+                        font-family: $robotoCondensed;
+                        color: white;
+                        font-size: 22px;
+                        text-align: justify;
+                        margin-top: -4rem;
+
+                        @include desktopGrande{
+                            font-size: 25px;
+                        }
+                    }
+    
+                    .titulo{
+                        font-size: 36px;
+                        font-family: $Bellerose;
+                        line-height: 2.8rem;
+                        margin-top: -4rem;
+
+                        @include desktopGrande{
+                            font-size: 45px;
+                        }
+                    }
+                }    
+            }
+    
+            .uno{
+                border-radius: 8rem 0 0 8rem;
+                @include desktopGrande{
+                    border-radius: 10rem 0 0 10rem;
+                }
+            }
+            .dos{
+                background-color: $secundario !important;
+                border-radius: 0rem 8rem 8rem 0rem;
+                @include desktopGrande{
+                    border-radius: 0rem 10rem 10rem 0rem;
+                }
+            }
+    
+            .btn{
+                a{
+                    @include boton;
+                    display: inline-flex;
+                    background-color: $primario;
+                    color: white;
+                    padding: .5rem .8rem;
+                    border-radius: 1.5rem;
+                }
+            }  
+        }   
+    }
+
+    .boxes-responsive{
+        display: flex;
+        height: 785px;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet{
+            height: 485px;
+        }
+
+        @include desktop{
+            display: none;
+        }
+
+            .box-responsive{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                background-color: $primario;
+                height: 370px;
+                margin: 1rem 1rem;
+                flex: 0 0 280px;
+
+                .img-responsive{
+                    flex: 100%;
+                    img{
+                        width: 45%;
+                        margin-top: 2.5rem;
+                        margin-bottom: -2rem;  
+                    }
+                }
+                
+                .secundario-responsive{
+                    width: 100% !important;
+                    margin-top: 1rem !important;     
+                }
+    
+                .info-responsive{
+                    flex: 100%;
+                    
+
+                    @include desktopGrande{
+                        padding-left: 8rem;
+                    }
+                    p{
+                        width: 80%;
+                        margin: 0 auto;
+                        font-family: $robotoCondensed;
+                        color: white;
+                        font-size: 19px;
+                        text-align: justify;
+                        
+
+                        @include desktopGrande{
+                            font-size: 25px;
+                        }
+                    }
+    
+                    .titulo-responsive{
+                        font-size: 22px;
+                        font-family: $Bellerose;
+                        line-height: 1.5rem;
+                        margin-top: -2rem;
+                        
+
+                        @include desktopGrande{
+                            font-size: 45px;
+                        }
+                    }
+                }     
+            }
+    
+            .uno-responsive{
+                border-radius: 2rem 2rem 2rem 2rem;
+                
+            }
+            .dos-responsive{
+                background-color: $secundario !important;
+                border-radius: 2rem 2rem 2rem 2rem;
+                padding-top: 2rem;
+                
+            }
+    
+            .btn-responsive{
+                a{
+                    @include boton;
+                    display: inline-flex;
+                    background-color: $primario;
+                    color: white;
+                    padding: .5rem .8rem;
+                    border-radius: 1.5rem;
+                }
+            }  
+    }
+        
+}

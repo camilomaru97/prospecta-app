@@ -1,0 +1,239 @@
+.diseno__container-3{
+    height: 445px;
+    background-color: $secundario;
+    
+
+    @include telefonoGrande{
+        height: 475px;
+    }
+
+    @include tablet{
+        height: 520px;
+    }
+
+    @include desktop{
+        height: 649px;
+        padding-top: .1rem;
+    }
+    @include desktopGrande{
+        height: 725px;
+    }
+
+    h1{
+        flex: 100%;
+        font-size: 31.6px;
+        font-family: $Bellerose;
+        font-weight: lighter;
+        color: white;
+        text-align: center;
+        margin-top: -.5rem;
+        margin-bottom: .5rem;
+
+        @include telefonoGrande{
+            font-size: 32px;
+        }
+
+        @include tablet{
+            font-size: 55px;
+            margin-bottom: 2.5rem;
+            line-height: 4rem;
+            margin-top: 0rem
+        }
+
+        @include desktop{
+            font-size: 65px;
+            height: 90px;
+            line-height: 3rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+        @include desktopGrande{
+            font-size: 74px;
+        }
+    }
+
+    .contenedor{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include desktop{
+            width: 66%;
+        }
+
+        @include desktop{
+            text-align: inherit;
+            margin-left: 17.3rem;
+        }
+
+        @include desktopGrande{
+            width: 50%;
+            margin-left: 26.3rem;
+            
+        }
+
+        .img{
+            flex: 20%;
+
+            @include tablet{
+                text-align: center;
+            }
+            @include desktop{
+                text-align: inherit;
+                flex: 50%;
+            }
+
+            .desktop{
+                display: none;
+
+                @include desktop{
+                    width: 85%;
+                    display: flex;
+                }
+                @include desktopGrande{
+                    width: 100%;
+                }
+            }
+
+            .responsive{
+                width: 42%;
+                margin-left: 0.8rem;
+                margin-top: .4rem;
+
+                @include telefonoGrande{
+                    width: 36%;
+                    margin-left: 1.8rem;
+                    margin-top: .3rem;
+                }
+
+                @include tablet{
+                    width: 15%;
+                    margin-left: 8.8rem;
+                    margin-top: .3rem;
+                }
+
+                @include desktop{
+                    display: none;
+                }
+            }
+        }
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex: 80%;
+
+            @include telefonoGrande{
+                margin-right: -1.5rem;
+            }
+            
+
+            @include tablet{
+                margin-right: -9.5rem;
+                padding-left: 1rem;
+            }
+
+            @include desktop{
+                margin-right: inherit;
+                padding-left: inherit;
+                flex: 50%;
+            }
+
+            @include desktopGrande{
+                padding-left: 1rem;
+            }
+
+            .item{
+                P{
+                    color: white;
+                    font-size: 16px;
+                    font-family: $robotoCondensed;
+                    text-align: justify;
+                    width: 221px;
+
+                    @include tablet{
+                        font-size: 18px;
+                        width: 250px;
+                    }
+                    @include desktop{
+                        font-size: 18px;
+                    }
+                    @include desktopGrande{
+                        font-size: 20px;
+                    }
+                    
+                    
+                }
+
+                .uno{
+                    margin-bottom: 1.4rem;
+
+                    @include telefonoGrande{
+                        margin-bottom: 1rem;
+                    }
+
+                    @include tablet{
+                        margin-bottom: 1.2rem;
+                    }
+
+                    @include desktop{
+                        margin-bottom: 2.2rem;
+                    }
+                    @include desktopGrande{
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .dos{
+                    margin-bottom: .7rem;
+                    @include telefonoGrande{
+                        margin-bottom: 1.6rem;
+                    }
+                    @include tablet{
+                        margin-bottom: 1.2rem;
+                    }
+                    @include desktop{
+                        margin-bottom: 1.7rem;
+                    }
+                }
+
+                .tres{
+                    margin-bottom: 1rem;
+                    @include telefonoGrande{
+                        margin-bottom: 1.6rem;
+                    }
+                    @include tablet{
+                        margin-bottom: 1.2rem;
+                    }
+                    @include desktop{
+                        margin-bottom: 2.1rem;
+                    }
+                    @include desktopGrande{
+                        margin-bottom: 1.9rem;
+                    }
+                }
+
+                .cuatro{
+                    margin-bottom: 1rem;
+
+                    @include telefonoGrande{
+                        margin-bottom: 1.7rem;
+                    }
+                    @include tablet{
+                        margin-bottom: 1.2rem;
+                    }
+                    @include desktop{
+                        margin-bottom: 1.8rem;
+                    }
+                    @include desktopGrande{
+                        margin-bottom: 1.7rem;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}

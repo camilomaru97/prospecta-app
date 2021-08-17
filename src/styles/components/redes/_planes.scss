@@ -1,0 +1,236 @@
+.redes__container-5{
+    
+    width: 80%;
+    margin: 0 auto;
+    height: 1660px;
+
+    @include tablet{
+        width: 100%;
+        height: 1110px;
+    }
+
+    @include desktop{
+        height: 800px;
+        width: 100%;
+    }
+    @include desktopGrande{
+        height: 870px;
+    }
+
+h2{
+    font-family: $Bellerose;
+    font-weight: 500;
+    font-size: 35px;
+    color:$secundario;
+    line-height: 2.2rem;
+    margin: 1.2 0 -2rem 0 !important;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+
+    @include tablet{
+        font-size: 55px;
+        line-height: 2.5rem;
+        margin-bottom: inherit;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+
+    @include desktop{
+        font-size: 60px;
+        margin-bottom: 5rem !important;
+        margin-top: 1rem;
+    }
+    @include desktopGrande{
+        margin-top: -.5rem;
+        font-size: 75px;
+        margin-bottom: 5rem;
+    }
+
+}
+
+.redes__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+
+    .box{
+        
+        display: flex;
+        flex-wrap: wrap;
+        height: 440px;
+        flex: 0 0 310px;
+        margin: 2rem 2rem;
+
+        @include tablet{
+            flex: 0 0 320px;
+            margin: 1rem 1rem;
+        }
+
+        @include desktop{
+            height: 530px;
+            flex: 0 0 330px;
+            margin: 0 .7rem;
+            border-radius: 0 0 4rem 4rem;
+
+            &:hover {
+                transition: .5s ease-in-out;
+                box-shadow: 12px 12px 17px 1px rgba(0,0,0,0.31);
+                transform: translate(0rem, -1rem);
+            }
+        }
+        @include desktopGrande{
+            height: 600px;
+            flex: 0 0 380px;
+        }
+        
+
+        .premium{
+            background-color: $secundario !important;
+        }
+        .plan{
+            flex: 100%;
+            height: 18%;
+            background-color: $primario;
+
+            @include tablet{
+                height: 18%;
+            }
+
+            .pro{
+
+                @include desktop{
+                    font-size: 46px !important;
+                    margin-top: -0.9rem !important;
+                    line-height: 2.6rem !important;
+                }
+                @include desktopGrande{
+                    font-size: 53px !important;
+                    margin-top: -0.8rem !important;
+                    line-height: 2.7rem !important;
+                }
+                
+            }
+            h3{
+                font-family: $Bellerose;
+                font-weight: lighter;
+                font-size: 40px;
+                color: white;
+                margin-top: -1.7rem;
+                text-align: center;
+
+                @include desktop{
+                    font-size: 46px;
+                    margin-top: -1.9rem;
+                }
+                @include desktopGrande{
+                    font-size: 53px;
+                    margin-top: -1.9rem;
+                }
+            }
+        }
+
+        .responsive{
+            padding-top: 2rem;
+
+            @include desktop{
+                padding-top: 3rem;
+            }
+        }
+
+        .dos{
+            padding-top: 1.1rem;
+        }
+        .info{
+            flex: 80%;
+            height: 72%;
+            background-color: #F2F2F2;
+
+            @include tablet{
+                height: 67%;
+            }
+
+            li{
+                width: 80%;
+                list-style-position: inside;
+                font-family: $robotoCondensed;
+                font-weight: lighter;
+                font-size: 16px;
+                color: $primario;
+                margin: 1rem 0rem 1rem 2.5rem;
+                
+
+                @include desktop{
+                    
+                    font-size: 18px;
+                    margin: 1rem 0rem 1rem 2rem;
+                }
+                @include desktopGrande{
+                    font-size: 21px;
+                    margin: 1rem 0rem 1rem 4rem;
+                }
+                
+            }
+        }
+        .precio{
+            flex: 100%;
+            height: 18%;
+            background-color: $primario;
+            border-radius: 0 0 4rem 4rem;
+
+            p{
+                font-family: $Bellerose;
+                font-weight: lighter;
+                font-size: 35px;
+                color: white;
+                margin-top: -1.9rem;
+                text-align: center;
+
+                @include desktop{
+                    font-size: 40px;
+                    margin-top: -2rem;
+                }
+                @include desktopGrande{
+                    font-size: 53px;
+                    margin-top: -3rem;
+                }
+            }
+
+            .btn{
+                text-align: center;
+                margin-top: -.5rem;
+
+                @include desktop{
+                    margin-top: -.5rem;
+                }
+                @include desktopGrande{
+                    margin-top: -.5rem;
+                }
+
+                a{
+                    @include boton;
+                    display: inline-flex;
+                    color: $primario;
+                    text-align: center;
+                    background-color: white;
+                    font-size: .7rem;
+                    
+
+                    @include desktop{
+                        font-size: .8rem
+                    }
+                    @include desktopGrande{
+                        margin-top: -1rem;
+                    }
+                
+                }
+
+            }
+            
+        }
+    }
+}
+
+}    
