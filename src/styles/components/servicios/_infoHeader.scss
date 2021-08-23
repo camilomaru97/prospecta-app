@@ -98,14 +98,14 @@
         }
 
         @include desktop{
-            font-size: 23px;
+            font-size: 1.3rem;
             width: 80%;
             margin: auto;
             margin-bottom: 0.5rem;
             padding: 0 26rem;
         }
         @include desktopGrande{
-            font-size: 25px;
+            font-size: 1.3rem;
             padding: 0 36rem;
         }
     }

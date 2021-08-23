@@ -27,12 +27,12 @@
     z-index: 2;
 
     @include desktop{
-        left: 0;
+        left: 4px;
     }
 
     @include desktopGrande{
-        left: 76px;
-        width: 72%;
+        left: 38px;
+        width: 80%;
         height: 100%;
     }
 
@@ -47,7 +47,7 @@
         }
 
         @include desktopGrande{
-
+            height: 90%;
         }
     }
 

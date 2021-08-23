@@ -4,7 +4,7 @@
 
     background-image: url('./images/headers/inicio.jpg');
     background-repeat: no-repeat;
-    background-position-x: -445px;
+    background-position-x: 42%;
     background-size: cover;
 
     @include tablet{
@@ -25,7 +25,7 @@
 
     background-image: url('./images/headers/nosotros.jpg');
     background-repeat: no-repeat;
-    background-position-x: -445px;
+    background-position-x: 42%;
     background-size: cover;
 
     @include tablet{
@@ -46,7 +46,7 @@
 
     background-image: url('./images/headers/servicios.jpg');
     background-repeat: no-repeat;
-    background-position-x: -445px;
+    background-position-x: 42%;
     background-size: cover;
 
     @include tablet{
@@ -67,7 +67,7 @@
 
     background-image: url('./images/headers/portafolio.jpg');
     background-repeat: no-repeat;
-    background-position-x: -445px;
+    background-position-x: 42%;
     background-size: cover;
 
     @include tablet{
@@ -88,7 +88,7 @@
 
     background-image: url('./images/headers/contacto.jpg');
     background-repeat: no-repeat;
-    background-position-x: -445px;
+    background-position-x: 42%;
     background-size: cover;
 
     @include tablet{
@@ -109,7 +109,7 @@
 
     background-image: url('./images/headers/branding.jpg');
     background-repeat: no-repeat;
-    background-position-x: -740px;
+    background-position-x: 56%;
     background-size: cover;
 
     @include tablet{
@@ -130,12 +130,12 @@
 
     background-image: url('./images/headers/desarrollo.jpg');
     background-repeat: no-repeat;
-    background-position-x: -540px;
+    background-position-x: 50%;
     background-size: cover;
     overflow: hidden;
 
     @include telefonoGrande{
-        background-position-x: -440px;
+        background-position-x: 50%;
     }
 
     @include tablet{
@@ -156,7 +156,7 @@
 
     background-image: url('./images/headers/diseño.jpg');
     background-repeat: no-repeat;
-    background-position-x: -740px;
+    background-position-x: 56%;
     background-size: cover;
     overflow: hidden;
 
@@ -178,12 +178,12 @@
 
     background-image: url('./images/headers/pauta.jpg');
     background-repeat: no-repeat;
-    background-position-x: -540px;
+    background-position-x: 50%;
     background-size: cover;
     overflow: hidden;
 
     @include telefonoGrande{
-        background-position-x: -440px;
+        background-position-x: 39%;
     }
 
     @include tablet{
@@ -204,12 +204,12 @@
 
     background-image: url('./images/headers/redes.jpg');
     background-repeat: no-repeat;
-    background-position-x: -370px;
+    background-position-x: 35%;
     background-size: cover;
     overflow: hidden;
 
     @include telefonoGrande{
-        background-position-x: -440px;
+        background-position-x: 39%;
     }
 
     @include tablet{

@@ -46,9 +46,7 @@ export const Form = () => {
                 }).catch(err => {
                     console.log(err)
                 })
-        }
-
-        
+        }   
     }
 
     const formValid = () => {
@@ -157,7 +155,7 @@ export const Form = () => {
                                 autoComplete='off'
                             />
                             <span className='barra'></span>
-                            <label>celular</label>
+                            <label>Celular</label>
                         </div>
 
                         <select
@@ -173,12 +171,12 @@ export const Form = () => {
                             <option value={'Branding'}>Branding</option>
                         </select>
 
-                        {/* <div className='wrap'>
+                        <div className='wrap'>
                             <input
                                 type='checkbox'
                             />
-                            <p>He leido y acepto <a href='/inicio'>la politica y privacidad</a></p>
-                        </div> */}
+                            <p>He leido y acepto <a href={'assets/contacto/td.pdf'} target='_blank'>la politica y privacidad</a></p>
+                        </div>
                         <button className="submit" type="submit">Enviar</button>
                     </div>
                 </form>

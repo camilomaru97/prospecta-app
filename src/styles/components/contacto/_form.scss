@@ -60,6 +60,7 @@
         
 
         @include desktop{
+            margin-top: -4rem;
             flex: inherit;
             text-align: inherit;
             
@@ -102,6 +103,8 @@
             width: 350px;
             flex: inherit;
         }
+
+        
     }
 
     .grupo{
@@ -205,11 +208,16 @@ button{
         
     }
     p{
-        flex: 80%;
+        flex: 90%;
+        font-family: $robotoCondensed;       
 
         a{
             color: $secundario
         }
     }
     
+}
+
+.swal2-title, .swal2-html-container, .swal2-actions{
+    font-family: $robotoCondensed;  
 }

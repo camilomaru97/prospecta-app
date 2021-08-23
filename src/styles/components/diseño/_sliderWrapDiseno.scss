@@ -27,7 +27,7 @@
     z-index: 2;
 
     @include desktop{
-        left: 180px;
+        left: 196px;
         
     }
 
@@ -48,7 +48,7 @@
         }
 
         @include desktopGrande{
-
+            width: 65%;
         }
     }
 

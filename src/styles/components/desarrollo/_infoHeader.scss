@@ -103,11 +103,15 @@
         }
 
         @include desktop{
-            font-size: 25px;
+            font-size: 1.2rem;
             line-height: 2rem;
             width: 80%;
             margin: auto;
             margin-bottom: 0.5rem;
+        }
+
+        @include desktop{
+            width: 69%;
         }
         
     }

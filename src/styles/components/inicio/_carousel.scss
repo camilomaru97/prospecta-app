@@ -17,7 +17,7 @@
         height: 765px;
     }
     @include desktopGrande{
-        height: 810px;
+        height: 775px;
     }
 }
 .inicio-container{
@@ -73,7 +73,7 @@
             }
     
             @include desktopGrande{
-                bottom: -70px;
+                bottom: -25px;
             }
         
             li{
@@ -113,6 +113,10 @@
     
 }
 
+.slick-dots li button::before{
+    left: 2px;
+}
+
 .inicio__slider__title{
     text-align: center;
     margin: 2rem 0rem 2rem 0;
@@ -130,7 +134,7 @@
     h2{
         font-family: $Bellerose;
         font-weight: 500;
-        font-size: 27px;
+        font-size: 25px;
         color: white;
         line-height: 2rem;
         margin: 1.2rem 0 -1rem 0;

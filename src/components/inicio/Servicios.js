@@ -40,7 +40,7 @@ export const Servicios = () => {
                             <p>
                                 Queremos hacer crecer tu negocio en línea, por eso, ponemos a tu disposición todo nuestro equipo
                                 para ayudarte a
-                                crear tu web a medida y que cumpla con tus necesidades.
+                                crear tu web a medida.
                             </p>
                             <button className='btn_servicios' >VER MÁS</button>
                         </div>

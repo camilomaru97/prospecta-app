@@ -85,7 +85,7 @@
     p{
         flex: 100%;
         font-family: $robotoCondensed;
-        font-size: 20px;
+        font-size: 18px;
         color: white;
         line-height: 1.8rem;
         margin-bottom: 0.5rem;
@@ -102,13 +102,14 @@
         }
 
         @include desktop{
-            font-size: 24px;
+            font-size: 1.3rem;
             width: 80%;
             margin: auto;
             margin-bottom: 0.5rem;
         }
         @include desktopGrande{
-            font-size: 25px;
+            font-size: 1.3rem;
+            width: 69%;
         }
     }
 
